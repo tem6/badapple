@@ -48,8 +48,8 @@ def play(window, fname, adj):
             # time.sleep()
     except curses.error:
         window.addstr(0, 0, "Windows size is too small.X(")
-    window.addstr(
-        0, 0, "Required Windows Size X, Y: 161, 61 Current: %s, %s" % window.getmaxyx())
+        window.addstr(
+            0, 0, "Required Windows Size X, Y: 161, 61 Current: %s, %s" % window.getmaxyx())
         window.addstr(1, 0, "Expand window size and try again.")
         window.addstr(2, 0, "Press any key to exit...")
         window.refresh()
